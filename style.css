@@ -1,0 +1,79 @@
+h1 {
+    font-size: 48px;
+    font-weight: bolder;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 24px;
+}
+
+.links {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.section {
+    padding: 16px;
+    border: solid rgb(109, 126, 112) 3px;
+    display: flex;
+    flex: 1 1 400px;
+    background-color: aqua;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+
+.block {
+    width: 35%;
+    height: auto;
+
+}
+
+.square {
+    width: 20%;
+    height: auto;
+}
+
+.curve {
+    border-radius: 20px;
+    border: solid white 3px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    height: 500px;
+    background-color: rgb(116, 92, 92);
+    justify-content: center;
+}
+
+.words {
+
+}
+
+footer {
+    height: 50px;
+    background-color: palevioletred;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
