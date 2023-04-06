@@ -1,5 +1,19 @@
+div {
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(106, 113, 118);
+}
+
+img {
+    max-width: 100%;
+}
+
 h1 {
-    font-size: 48px;
+    font-size: 36px;
     font-weight: bolder;
 }
 
@@ -9,71 +23,133 @@ body {
     justify-content: space-between;
 }
 
+.section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1 0 100%;
+}
+
+
 header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: baseline;
     font-size: 24px;
-}
-
-.links {
-    text-decoration: none;
-}
-
-a {
-    text-decoration: none;
-    font-size: 16px;
-}
-
-img {
-    max-width: 100%;
-    object-fit: cover;
-}
-
-.section {
-    padding: 16px;
-    border: solid rgb(109, 126, 112) 3px;
-    display: flex;
-    flex: 1 1 400px;
-    background-color: aqua;
-    flex-flow: row wrap;
-    justify-content: space-around;
-
-}
+    font-weight: bold;
+    color: white;
+    background-color: rgb(32, 53, 37);
+    flex: 1 0 100%;
+    }
 
 .block {
-    width: 35%;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    flex: 1 1 1;
+    justify-content: center;
+    gap: 16px;
+    width: 75%;
+}
 
+
+.links { 
+    gap: 8px;
+}
+
+header,.block,footer {
+    padding: 16px;
+}
+.blockh {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(32, 53, 37);
+    width: 75%;
+}
+
+.smblock {
+    width: 50%;
+    height: auto;
 }
 
 .square {
+    display: flex;
+    flex-flow: column nowrap;
+    flex: 2 1 1;
     width: 20%;
     height: auto;
+    gap: 8px
 }
 
 .curve {
     border-radius: 20px;
-    border: solid white 3px;
 }
 
-.intro {
+
+.row{ flex-direction: row;}
+
+.smblock {
     display: flex;
-    flex-direction: row;
-    flex: 1 1 auto;
-    height: 500px;
-    background-color: rgb(116, 92, 92);
-    justify-content: center;
+    flex: 1 1 1;
+    flex-direction: column;
+    margin: 16px;
+    border-radius: 16px;
 }
 
 .words {
+    font-size: 18px;
+}
 
+.quote {
+    font-size: 28px;
+    font-style: italic;
+    font-weight: light; }
+
+.quotee { 
+    font-size: 20px;
+    font-weight: bold;
+    font-style: normal; 
+    }
+
+button {
+    background-color: rgb(65, 92, 65);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;    
+    border-radius: 4px;
+    padding: 4px 16px;
+}
+
+.right {
+    align-self: flex-end;
+    justify-self: end;
+}
+.center{
+    align-self: center;
+    justify-self: center;
 }
 
 footer {
     height: 50px;
     background-color: palevioletred;
     display: flex;
+    width: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.blue {
+    background-color: rgb(150, 150, 186);
+}
+.white {
+    background-color: rgba(255, 255, 255, 0.942);
+}
+.grey {
+    background-color: rgb(134, 135, 126);
 }
